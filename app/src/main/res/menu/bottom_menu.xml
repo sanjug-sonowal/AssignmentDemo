@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:iconTint="@color/white"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item
+        android:id="@+id/shorts"
+        android:title="Shorts"
+        android:iconTint="@color/white"
+        android:icon="@drawable/baseline_whatshot_24"
+        />
+
+    <item
+        android:title=""/>
+
+    <item
+        android:id="@+id/subscriptions"
+        android:title="Subscriptions"
+        android:iconTint="@color/white"
+        android:icon="@drawable/baseline_subscriptions_24" />
+    <item
+        android:id="@+id/library"
+        android:title="Library"
+        android:iconTint="@color/white"
+        android:icon="@drawable/baseline_video_library_24" />
+
+</menu>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/yellowMainColor"
+    android:id="@+id/repoScreenFragment"
+    tools:context=".View.RepoScreenFragment">
+
+    <LinearLayout
+        android:id="@+id/emptyRepoScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="visible"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Track your favourite repo"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/btnAddRepo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/black"
+            android:text="ADD REPOSITORY"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_margin="20dp"
+            style="@style/Widget.Material3.Button.TonalButton.Icon"
+            app:icon="@drawable/baseline_add_24"
+            app:iconGravity="textStart"
+            app:iconTint="@color/white"
+            app:iconSize="28dp"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/repositoryRecyclerView"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="wrap_content" />
+
+</FrameLayout>
+

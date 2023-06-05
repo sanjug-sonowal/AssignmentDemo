@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/black"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="10dp"
+    android:id="@+id/Repocard"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        >
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/profilecard"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:cardCornerRadius="250dp"
+            android:layout_marginLeft="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/circle"
+                android:src="@drawable/man"
+                android:scaleType="centerCrop"
+               />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/repoName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Repo Name"
+            android:maxLines="2"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/shareButton"
+            app:layout_constraintStart_toEndOf="@+id/profilecard"
+            app:layout_constraintTop_toTopOf="@+id/profilecard" />
+
+
+        <TextView
+            android:id="@+id/DescriptionText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/profilecard"
+            app:layout_constraintEnd_toStartOf="@+id/shareButton"
+            app:layout_constraintTop_toBottomOf="@+id/repoName" />
+
+        <ImageButton
+            android:id="@+id/shareButton"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/share"
+            android:scaleType="centerCrop"
+            android:background="@drawable/transparent_rect"
+            app:layout_constraintTop_toTopOf="@+id/profilecard"
+            app:layout_constraintBottom_toBottomOf="@+id/profilecard"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

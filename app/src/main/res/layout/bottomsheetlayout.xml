@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialogbackground">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_remove_24"
+        android:layout_gravity="center|top"
+        android:scaleType="centerCrop"
+        app:tint="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/AddToRepo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:text="Add Github Repositories"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_clear_24"
+            android:layout_marginLeft="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:id="@+id/cancelButton"
+            app:tint="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/linkadd"
+            android:layout_gravity="center"
+            android:paddingRight="10dp"
+            app:tint="@color/black"/>
+
+        <EditText
+            android:id="@+id/repoName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter Repository Name"
+            android:textColor="@color/black"
+            android:background="@drawable/transparent_rect"
+            android:textColorHint="#BF000000"
+            android:textSize="16sp"
+            android:paddingStart="10dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/useradd"
+            android:layout_gravity="center"
+            android:paddingRight="10dp"
+            app:tint="@color/black"/>
+
+        <EditText
+            android:id="@+id/repoOwner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter Owner Name"
+            android:textColor="@color/black"
+            android:background="@drawable/transparent_rect"
+            android:textColorHint="#BF000000"
+            android:textSize="16sp"
+            android:paddingStart="10dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutLive"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="30dp">
+
+
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/black"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="ADD" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
